@@ -79,13 +79,13 @@ const COUPLES = [
 // PLACEHOLDER — swap in the real numbers before you publish this page.
 // Call / WhatsApp buttons appear automatically on any card that has a number.
 const RSVP = [
-  { name: "Abid Farooq", phone: "923009677782" },
-  { name: "Sajid Farooq", phone: "971553220687" },
-  { name: "Ahmad Bin Abid", phone: "923117458141" },
-  { name: "Usman Jameel", phone: "923366606207" },
-  { name: "Owais Shafqat", phone: "923002345652" },
-  { name: "Mubashir Sajid", phone: "923041660032" },
-  { name: "Muhammad Bin Abid", phone: "923335628569" },
+  { name: "Mr. Abid Farooq", phone: "923009677782" },
+  { name: "Mr. Sajid Farooq", phone: "971553220687" },
+  { name: "Mr. Ahmad Bin Abid", phone: "923117458141" },
+  { name: "Mr. Usman Jameel", phone: "923366606207" },
+  { name: "Mr. Owais Shafqat", phone: "923002345652" },
+  { name: "Mr. Mubashir Sajid", phone: "923041660032" },
+  { name: "Mr. Muhammad Bin Abid", phone: "923335628569" },
 ];
 
 const TARGET = new Date(EVENT.start).getTime();
