@@ -84,6 +84,7 @@ const RSVP = [
   { name: "Ahmad Bin Abid", phone: "923117458141" },
   { name: "Usman Jameel", phone: "923366606207" },
   { name: "Owais Shafqat", phone: "923002345652" },
+  { name: "Mubashir Sajid", phone: "923041660032" },
   { name: "Muhammad Bin Abid", phone: "923335628569" },
 ];
 
