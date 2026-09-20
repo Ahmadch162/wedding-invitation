@@ -68,7 +68,7 @@ const COUPLES = [
     label: "Second Barat",
     tone: "emerald",
     bride: { name: "Zoya Abid", parent: "Daughter of Abid Farooq" },
-    groom: { name: "Abdul-Hannan Amir", parent: "Son of Amir Saleem" },
+    groom: { name: "Abdul-Hannan Amir", parent: "Son of Amir Zubair" },
   },
 ];
 
