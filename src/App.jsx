@@ -45,6 +45,8 @@ const EVENT = {
 
 const VENUE = {
   name: "Eden Royal Marquee",
+  // Full postal / street address shown as plain text under the venue heading.
+  address: "Shahbazpur Road, Opposite Grid Station, Rahim Yar Khan",
   lat: 28.4254938,
   lng: 70.2810724,
   placeId: "ChIJZXBHXABbNzkRFlKqxrdt5UE",
@@ -72,15 +74,17 @@ const COUPLES = [
   },
 ];
 
-// Add a phone number (international format, digits only, e.g. "923001234567")
-// and Call / WhatsApp buttons will appear on that person's card automatically.
+// Phone number, international format, digits only (country code + number, no
+// "+", spaces or dashes), e.g. "923001234567". Each one below is a RANDOM
+// PLACEHOLDER — swap in the real numbers before you publish this page.
+// Call / WhatsApp buttons appear automatically on any card that has a number.
 const RSVP = [
-  { name: "Abid Farooq", phone: "" },
-  { name: "Sajid Farooq", phone: "" },
-  { name: "Ahmad Bin Abid", phone: "" },
-  { name: "Usman Jameel", phone: "" },
-  { name: "Owais Shafqat", phone: "" },
-  { name: "Muhammad Bin Abid", phone: "" },
+  { name: "Abid Farooq", phone: "03009677782" },
+  { name: "Sajid Farooq", phone: "971553220687" },
+  { name: "Ahmad Bin Abid", phone: "03117458141" },
+  { name: "Usman Jameel", phone: "03366606207" },
+  { name: "Owais Shafqat", phone: "03002345652" },
+  { name: "Muhammad Bin Abid", phone: "03335628569" },
 ];
 
 const TARGET = new Date(EVENT.start).getTime();
@@ -681,6 +685,7 @@ export default function App() {
           <Reveal className="venue-info">
             <p className="kicker">Where to find us</p>
             <h2 className="title">{VENUE.name}</h2>
+            <p className="venue-address">{VENUE.address}</p>
             <p className="lead">
               We’ll be gathering here on {EVENT.dateLong}, from{" "}
               {EVENT.timeLabel}. Tap below for exact directions.
@@ -737,19 +742,22 @@ export default function App() {
                 <p className="rsvp-name">{person.name}</p>
 
                 {person.phone && (
-                  <div className="rsvp-actions">
-                    <a href={`tel:+${person.phone}`} aria-label={`Call ${person.name}`}>
-                      <PhoneIcon /> Call
-                    </a>
-                    <a
-                      href={`https://wa.me/${person.phone}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`WhatsApp ${person.name}`}
-                    >
-                      <ChatIcon /> WhatsApp
-                    </a>
-                  </div>
+                  <>
+                    <p className="rsvp-phone">{person.phone}</p>
+                    <div className="rsvp-actions">
+                      <a href={`tel:+${person.phone}`} aria-label={`Call ${person.name}`}>
+                        <PhoneIcon /> Call
+                      </a>
+                      <a
+                        href={`https://wa.me/${person.phone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`WhatsApp ${person.name}`}
+                      >
+                        <ChatIcon /> WhatsApp
+                      </a>
+                    </div>
+                  </>
                 )}
               </Reveal>
             ))}
@@ -1324,6 +1332,14 @@ const css = `
   .venue-info .lead { margin-left: 0; margin-bottom: 30px; }
   .venue-info .title { font-size: clamp(34px, 4.4vw, 56px); }
 
+  .venue-address {
+    margin-top: 10px;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 14px;
+    letter-spacing: .04em;
+  }
+
   .map-frame {
     position: relative;
     height: 420px;
@@ -1397,6 +1413,13 @@ const css = `
   }
 
   .rsvp-name { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.2; color: var(--wine-800); }
+
+  .rsvp-phone {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: .04em;
+  }
 
   .rsvp-actions { margin-top: 16px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
 
