@@ -1188,7 +1188,7 @@ const css = `
 
   .host-name {
     font-family: var(--serif);
-    font-size: clamp(44px, 7vw, 84px);
+    font-size: clamp(36px, 7vw, 76px);
     font-weight: 600;
     line-height: 1.05;
     color: var(--wine-800);
