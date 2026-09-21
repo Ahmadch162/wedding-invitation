@@ -586,7 +586,7 @@ export default function App() {
             بسم اللہ الرحمٰن الرحیم
           </p>
                     <p className="hero-eyebrow">{EVENT.hostCouple} invite you to celebrate</p>
-          <p className="hero-script">the weddings of his two beloved daughters</p>
+          <p className="hero-script">the weddings of their two beloved daughters</p>
 
           <div className="hero-names" role="heading" aria-level={1}>
             <span>
