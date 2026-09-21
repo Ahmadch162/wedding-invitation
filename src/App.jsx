@@ -1188,13 +1188,13 @@ const css = `
 
   .host-name {
     font-family: var(--serif);
-    font-size: clamp(36px, 7vw, 76px);
+    font-size: clamp(34px, 7vw, 74px);
     font-weight: 600;
     line-height: 1.05;
     color: var(--wine-800);
   }
 
-  .host-sub { margin-top: 10px; font-family: var(--script); font-size: 32px; color: var(--gold-dark); }
+  .host-sub { margin-top: 10px; font-family: var(--script); font-size: 30px; color: var(--gold-dark); }
 
   .host-copy {
     font-family: var(--serif);
