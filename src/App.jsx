@@ -34,6 +34,7 @@ const VIDEO = {
 
 const EVENT = {
   host: "Abid Farooq",
+  hostCouple: "Mr. & Mrs. Abid Farooq",
   dateLong: "Saturday, 17 October 2026",
   dateShort: "17 October 2026",
   weekday: "Saturday",
@@ -584,7 +585,7 @@ export default function App() {
           <p className="hero-bismillah" lang="ur" dir="rtl">
             بسم اللہ الرحمٰن الرحیم
           </p>
-          <p className="hero-eyebrow">{EVENT.host} invites you to celebrate</p>
+                    <p className="hero-eyebrow">{EVENT.hostCouple} invite you to celebrate</p>
           <p className="hero-script">the weddings of his two beloved daughters</p>
 
           <div className="hero-names" role="heading" aria-level={1}>
@@ -604,17 +605,17 @@ export default function App() {
         </div>
       </header>
 
-      {/* HOST INVITATION */}
+            {/* HOST INVITATION */}
       <section className="section host">
         <div className="narrow">
           <Reveal>
             <p className="kicker">With the blessings of Allah</p>
-            <h2 className="host-name">{EVENT.host}</h2>
-            <p className="host-sub">along with his family</p>
+            <h2 className="host-name">{EVENT.hostCouple}</h2>
+            <p className="host-sub">along with their family</p>
             <Divider />
             <p className="host-copy">
-              cordially requests the pleasure of your company, and that of your
-              family, at the Barat ceremony of his beloved daughters
+              cordially request the pleasure of your company, and that of your
+              family, at the Barat ceremony of their beloved daughters
               <strong> Sarosh </strong>
               and
               <strong> Zoya</strong> — two sisters, celebrated together on one
@@ -767,10 +768,10 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
+            <footer className="footer">
         <Khatam className="footer-star" />
         <p className="footer-script">With warm regards</p>
-        <p className="footer-host">{EVENT.host} &amp; Family</p>
+        <p className="footer-host">{EVENT.hostCouple}</p>
         <p className="footer-meta">
           17 · 10 · 2026 &nbsp;•&nbsp; {VENUE.name}
         </p>
