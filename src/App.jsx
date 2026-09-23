@@ -71,7 +71,7 @@ const COUPLES = [
     label: "Second Barat",
     tone: "emerald",
     bride: { name: "Zoya Abid", parent: "Daughter of Abid Farooq" },
-    groom: { name: "Abdul-Hannan Amir", parent: "Son of Amir Zubair" },
+    groom: { name: "Hannan Amir", parent: "Son of Amir Zubair" },
   },
 ];
 
@@ -117,7 +117,7 @@ const downloadCalendar = () => {
     `DTSTAMP:${fmt(new Date().toISOString())}`,
     `DTSTART:${fmt(EVENT.start)}`,
     `DTEND:${fmt(EVENT.end)}`,
-    `SUMMARY:${esc("Barat Ceremony - Sarosh & Sohaib | Zoya & Abdul-Hannan")}`,
+    `SUMMARY:${esc("Barat Ceremony - Sarosh & Sohaib | Zoya & Hannan")}`,
     `LOCATION:${esc(VENUE.name)}`,
     `DESCRIPTION:${esc("Map: " + VENUE.directionsLink)}`,
     "END:VEVENT",
@@ -594,7 +594,7 @@ export default function App() {
             </span>
             <em aria-hidden="true">&amp;</em>
             <span>
-              <span>Zoya</span> <i>&amp;</i> <span>Abdul-Hannan</span>
+              <span>Zoya</span> <i>&amp;</i> <span>Hannan</span>
             </span>
           </div>
 
@@ -776,7 +776,7 @@ export default function App() {
           17 · 10 · 2026 &nbsp;•&nbsp; {VENUE.name}
         </p>
         <p className="footer-fine">
-          Sarosh &amp; Sohaib &nbsp;|&nbsp; Zoya &amp; Abdul-Hannan
+          Sarosh &amp; Sohaib &nbsp;|&nbsp; Zoya &amp; Hannan
         </p>
       </footer>
       </div>
